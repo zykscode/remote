@@ -29,7 +29,7 @@ export default function MenuItem({ enabled, link, name }: Props) {
   return (
     <motion.div variants={variants} className='flex  gap-[30px]'>
       {enabled?
-      <Link href={`/certawi/${link}`}>
+      <Link href={`/${link}`}>
         <div className='navText1 text-4xl '>{name}</div>
       </Link>:<div className='navText1 text-4xl '>{name}</div>}
       

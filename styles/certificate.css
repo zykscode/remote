@@ -13,8 +13,64 @@
 .app {
     max-width: 1440px;
     margin-inline: auto;
-    background-color: aquamarine;
 }
+
+.page {
+    width: 100%;
+    height: 100%;
+}
+
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+}
+
+.hero>.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    gap: 1rem;
+    max-width: 533px;
+    overflow: hidden;
+    padding-inline:1rem ;
+}
+
+
+.info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: left;
+    
+}
+
+.info span {
+    color: var(--primary);
+}
+
+.info p {
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+  
+
+}
+
+
+.info h2 {
+    font-family: Sora;
+    font-size:2rem;
+    font-weight: 700;
+    line-height: 3rem;
+    letter-spacing: 0em;
+}
+
 
 .header {
     display: flex;
@@ -177,7 +233,6 @@
 
 
 .button {
-    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -316,7 +371,9 @@
 }
 
 @media (min-width:760px) {
-    .header {
+
+    .header,
+    .page {
         padding: 20px 44px;
     }
 
@@ -327,6 +384,30 @@
     .navbar-rhs>.button {
         display: flex;
     }
+
+    .hero > .info{
+        align-items: flex-start;
+    }
+
+   
+    .info h2 {
+        font-family: Sora;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 60px;
+        letter-spacing: 0em;
+        text-align: left;
+    
+    }
+
+    .info{
+        justify-content: center;
+    }
+
+    .info p {
+        text-align: left;
+    }
+
 
     .smallNav {
         padding-inline: 1rem;
@@ -375,13 +456,25 @@
         display: flex;
         width: 100%;
     }
+
+    .navbar .button{
+        display: none;
+    }
 }
 
 @media (min-width:1240px) {
-    .header {
+
+    .header,
+    .page {
         padding: 20px 6.25rem;
     }
+    .hero {
+        flex-direction: row;
+    }
 
+    .hero>.info{
+        gap: 2rem;
+    }
     .mobileToggleDiv {
         display: none;
     }

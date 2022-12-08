@@ -12,7 +12,7 @@ const Navbar = (props: Props) => {
     <nav className='navbar'>
       <div className="navbar-lhs">
         {navs.map((nav)=>{
-          return <Link key={nav.name} href={`/certawi/${nav.link}`}>
+          return <Link key={nav.name} href={`/${nav.link}`}>
             {nav.name}
           </Link>
         })}

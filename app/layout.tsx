@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/globals.css';
-import '../styles/certificate.css';
+// import '../styles/certificate.css';
+import '../styles/certificate.scss';
 import Footer from '../Components/Footer'
 import Header from '../Components/header/Header';
 
@@ -10,6 +11,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  console.log({
+    todo:"Navbar animation too fast"
+  })
   return (
     <html lang="en">
       <head>
@@ -23,9 +27,6 @@ export default function RootLayout({
       </head>
       <body className="app">
         <Header/>
-        <div className="bg-pink-500">
-          hello
-        </div>
         {children}
         <Footer />
         </body>
