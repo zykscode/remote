@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/globals.css';
-// import '../styles/certificate.css';
 import '../styles/certificate.scss';
 import Footer from '../Components/Footer'
 import Header from '../Components/header/Header';
